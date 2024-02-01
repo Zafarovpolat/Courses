@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    .course-categories {
+        .categories {
+            &__see {
+                @include btn($pl: 95px);
+            }
+        }
+    }
+}

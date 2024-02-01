@@ -1,0 +1,45 @@
+@media (max-width: 560px) {
+    .expert {
+        &__wrapper {
+            &__learn {
+                text-align: center;
+            }
+
+            &>div {
+                &>div {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .expert {
+        &__wrapper {
+            gap: 66px;
+        }
+
+        &__card {
+
+            &__up {
+                flex-wrap: wrap;
+
+                &>h4 {
+                    font-size: 20px;
+                }
+
+                &>div {
+                    text-align: center;
+                    font-size: 12px;
+                    padding: 12px 10px;
+                }
+            }
+
+            &__list {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

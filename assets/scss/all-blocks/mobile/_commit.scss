@@ -1,0 +1,40 @@
+@media (max-width: 700px) {
+    .commit {
+        margin-bottom: 181px;
+
+        &__text {
+            &>p {
+                font-size: 20px;
+                margin-bottom: 20px !important;
+            }
+
+            &>a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .commit {
+
+        &__text {
+            &>p {
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .commit {
+        margin-bottom: 141px;
+
+
+        &__text {
+            &>p {
+                font-size: 18px;
+            }
+        }
+    }
+}

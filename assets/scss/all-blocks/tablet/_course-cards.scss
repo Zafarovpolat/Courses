@@ -1,0 +1,14 @@
+@media (max-width: 900px) {
+    .course-cards {
+        .trend {
+
+            &__pagination {
+                grid-column: 1 / 2;
+            }
+
+            &__cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

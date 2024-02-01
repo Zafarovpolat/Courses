@@ -1,0 +1,36 @@
+.course-categories {
+    .categories {
+
+        &__container {
+            margin-bottom: 155px !important;
+
+            &>div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 56px !important;
+            }
+        }
+
+        &__heading {
+            @include heading($fs: 44px);
+            margin-bottom: 0 !important;
+        }
+
+        &__see {
+            @include btn($pt: 10px, $pl: 115px);
+            text-transform: capitalize;
+        }
+
+        &__cards {
+            margin-bottom: 0 !important;
+
+            &__card {
+                &>a {
+                    max-height: 391px;
+                    padding: 319px 0 40px !important;
+                }
+            }
+        }
+    }
+}

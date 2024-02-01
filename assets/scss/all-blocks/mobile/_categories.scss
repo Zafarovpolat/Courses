@@ -1,0 +1,42 @@
+@media (max-width: 680px) {
+    .categories {
+        &__cards {
+            margin-bottom: 141px !important;
+        }
+
+        &__info {
+            gap: 20px;
+
+            &__card {
+                &>i {
+                    font-size: 44px;
+                }
+
+                &>h4 {
+                    font-size: 28px;
+                }
+
+                &>p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .categories {
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .categories {
+
+        &__info {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 950px) {
+    .header {
+
+        &__wrapper {
+            gap: 0;
+        }
+
+        &__wrapper:nth-child(2) {
+            display: none;
+        }
+
+        &__wrapper:nth-child(3) {
+            display: flex;
+        }
+
+        &__nav {
+            &__menu {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+
+                &--btn {
+                    background-color: transparent;
+                    font-size: 26px;
+                    color: $blue;
+                }
+
+                &>.btn-close {
+                    position: absolute;
+                    right: 6.5%;
+                    top: 4.5%;
+                    font-size: 26px;
+                }
+
+                &>form {
+                    display: flex;
+                    width: 50%;
+                }
+
+                &>ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+
+        }
+    }
+}

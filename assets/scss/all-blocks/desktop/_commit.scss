@@ -1,0 +1,118 @@
+.commit {
+    margin-bottom: 224px;
+
+    &__container {
+        max-width: 1188px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__switch {
+        background-color: $pink !important;
+        border-radius: 30px;
+        position: absolute !important;
+        height: 50px;
+        width: 50px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__switch:nth-child(2) {
+        left: -2%;
+        bottom: 45%;
+    }
+
+    &__switch:nth-child(3) {
+        right: -2%;
+        bottom: 45%;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 48px;
+    }
+
+    &__img {
+        width: 100%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        img:nth-child(2) {
+            max-width: 180px;
+            max-height: 180px;
+            position: absolute;
+            left: -38px;
+            bottom: -37px;
+        }
+    }
+
+    &__text {
+        padding: 63px 0px 26px;
+
+        &>p {
+            color: $blue;
+            font-family: 'Rubik', sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 48px;
+            margin-bottom: 32px !important;
+        }
+
+        &>a {
+            color: $blue;
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            text-decoration: none;
+        }
+
+        &>h4 {
+            color: #808080;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 8px !important;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .commit {
+        &__container {
+            width: 90%;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .commit {
+        &__wrapper {
+            gap: 30px;
+            align-items: center;
+        }
+
+        &__switch {
+            scale: 0.8;
+        }
+
+        &__text {
+            padding: 20px 0px;
+
+            &>p {
+                font-size: 26px;
+            }
+
+            &>a {
+                font-size: 20px;
+            }
+        }
+    }
+}

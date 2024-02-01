@@ -1,0 +1,133 @@
+@media (max-width: 650px) {
+    .expert-header {
+        .header {
+
+            &__navigate {
+                margin-bottom: 34px;
+
+                &>a,
+                &>h5 {
+                    font-size: 12px;
+                }
+
+                &>i {
+                    font-size: 10px;
+                }
+            }
+
+            &__rating {
+                margin-bottom: 18px !important;
+
+                &>span:nth-child(2) {
+                    font-size: 18px;
+                }
+            }
+
+            &__author {
+                grid-template-columns: 40px auto;
+
+                &>h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .expert-header {
+        .header {
+
+            &__content {
+                text-align: center;
+            }
+
+            &__nav {
+                padding: 36px 0px 18px 0px !important;
+            }
+
+            &__navigate {
+                gap: 0 10px;
+                margin-bottom: 6px !important;
+                flex-wrap: wrap;
+
+                &>a,
+                &>h5 {
+                    font-size: 10px;
+                    flex-wrap: wrap;
+                }
+            }
+
+            &__heading {
+                padding-left: 0 !important;
+                font-size: 32px;
+                line-height: 50px;
+                margin-bottom: 24px !important;
+            }
+
+            &__rating {
+                padding-left: 0 !important;
+                margin-bottom: 12px !important;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+                &>ul {
+                    font-size: 12px;
+                    gap: 6px;
+                    margin-right: 10px !important;
+                    justify-content: center;
+                    order: -4;
+                }
+
+                &>span:nth-child(2) {
+                    font-size: 15px;
+                    margin-right: 10px !important;
+                    order: -2;
+                }
+
+                &>span:nth-child(3) {
+                    margin-right: 6px !important;
+                    font-size: 10px;
+                    order: -3;
+                }
+
+                &>span:nth-child(4) {
+                    font-size: 10px;
+                    order: -1;
+                }
+            }
+
+            &__author {
+                gap: 8px;
+                padding-left: 0 !important;
+                margin-bottom: 20px !important;
+                grid-template-columns: 1fr;
+
+                &>img {
+                    max-width: 50px;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .expert-header {
+        .header {
+
+            &__heading {
+                font-size: 28px;
+            }
+
+            &__btns {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                &>* {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

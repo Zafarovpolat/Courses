@@ -1,0 +1,33 @@
+@media (max-width: 1000px) {
+    .course-trend {
+        .trend {
+            &__info {
+                margin-bottom: 46px !important;
+            }
+
+            &__switch {
+                display: none;
+            }
+
+            &__cards {
+                &__card:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .course-trend {
+        .trend {
+            &__cards {
+                width: 100%;
+
+                &__card:nth-child(5) {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

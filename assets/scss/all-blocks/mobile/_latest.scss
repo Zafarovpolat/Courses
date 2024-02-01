@@ -1,0 +1,26 @@
+@media (max-width: 730px) {
+    .latest {
+        &__cards {
+            grid-template-columns: 1fr;
+            padding: 0 50px !important;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .latest {
+        &__cards {
+            padding: 0 30px !important;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .latest {
+        margin-bottom: 120px !important;
+
+        &__cards {
+            padding: 10px !important;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@media (max-width: 1000px) {
+    .mentor {
+        &::before {
+            display: none;
+            content: none;
+        }
+
+        &__heading {
+            font-size: 36px;
+            margin-bottom: 28px !important;
+        }
+
+        .mentor__info:nth-child(3) {
+            margin-bottom: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .mentor {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__text {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

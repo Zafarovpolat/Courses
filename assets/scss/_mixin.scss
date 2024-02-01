@@ -1,0 +1,104 @@
+@mixin btn($color: $pink, $fcolor: white, $pt: 0px, $pl: 0px, $fw: 600, $lh: 32px, $fs: 16px) {
+    background-color: $color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $fcolor;
+    border-radius: 8px;
+    border: 1px solid $color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: calc($pt + 2px) calc($pl - 2px) !important;
+    font-size: $fs;
+
+    &:hover {
+        background-color: transparent;
+        color: $color
+    }
+
+    &>i {
+        font-size: 24px;
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+
+    @media (max-width: 1400px) {
+        & {
+            padding: calc(($pt + 2px)/1.5) calc(($pl - 2px)/1.5) !important;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        & {
+            padding: calc(($pt + 2px)/2) calc(($pl - 2px)/2) !important;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        & {
+            padding: calc(($pt + 2px)/2.2) calc(($pl - 2px)/2.2) !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        & {
+            padding: calc(($pt + 2px)/2.5) calc(($pl - 2px)/2.5) !important;
+            font-size: calc($fs/1.2);
+        }
+    }
+
+    @media (max-width: 300px) {
+        & {
+            padding: calc(($pt + 2px)/2.5) calc(($pl - 2px)/2.5) !important;
+            font-size: calc($fs/1.3);
+        }
+    }
+}
+
+@mixin heading($fs: 48px, $lh: 64px) {
+    font-size: $fs;
+    font-weight: 700;
+    color: $blue;
+    line-height: $lh;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+
+    @media (max-width: 1000px) {
+        & {
+            font-size: calc($fs * 0.92);
+        }
+    }
+
+    @media (max-width: 800px) {
+        & {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 700px) {
+        & {
+            font-size: calc($fs * 0.791);
+        }
+    }
+
+    @media (max-width: 400px) {
+        & {
+            font-size: calc($fs * 0.666);
+        }
+    }
+}
+
+@mixin card() {
+    display: flex !important;
+    flex-direction: column;
+    padding: 16px !important;
+    border-radius: 8px;
+
+    &:hover {
+        box-shadow: 20px 20px 60px 0px rgba(0, 0, 0, 0.2);
+        transform: scale(1.01);
+    }
+}

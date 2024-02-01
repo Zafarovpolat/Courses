@@ -1,0 +1,39 @@
+@media (max-width: 520px) {
+    .course-trend {
+        .trend {
+
+            &__navigate {
+                align-self: start;
+            }
+
+            &__container {
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__heading {
+                @include heading($fs: 36px);
+            }
+
+            &__info {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .course-trend {
+        .trend {
+
+            &__navigate {
+
+                &>a,
+                &>h5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

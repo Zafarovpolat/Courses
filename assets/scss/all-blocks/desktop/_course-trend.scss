@@ -1,0 +1,80 @@
+.course-trend {
+    .trend {
+
+        &__container {
+            margin-bottom: 106px !important;
+            align-items: start;
+            position: relative;
+        }
+
+        &__navigate {
+            margin-top: 8px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 24px;
+            line-height: 32px;
+
+            &>a {
+                text-decoration: none;
+                color: #808080;
+            }
+
+            &>i {
+                font-size: 12px;
+            }
+
+            &>h5 {
+                font-size: 16px;
+                color: $blue;
+                font-weight: 600;
+            }
+        }
+
+        &__heading {
+            margin-bottom: 24px !important;
+            @include heading($fs: 64px, $lh: 88px);
+        }
+
+        &__info {
+            max-width: 712px;
+            color: #808080;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 56px !important;
+        }
+
+        &__subheading {
+            margin-bottom: 32px !important;
+            @include heading($fs: 32px, $lh: 48px);
+        }
+
+        &__switch {
+            position: absolute;
+            padding: 8px 15px;
+            z-index: 10;
+            border-radius: 30px;
+            font-size: 24px;
+            color: white;
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .course-trend {
+        .trend {
+            &__heading {
+                @include heading()
+            }
+
+            &__cards {
+                &__card:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

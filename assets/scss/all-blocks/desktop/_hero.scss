@@ -1,0 +1,230 @@
+.hero {
+    &__container {
+        width: 100%;
+        background-color: #021934;
+        color: white;
+        border-radius: 8px;
+        padding: 64px 64px 0;
+        display: grid;
+        grid-template-columns: 647px 529px;
+        align-items: center;
+        gap: 56px;
+        margin: 0 auto;
+        margin-bottom: 88px;
+    }
+
+    &__left {
+        padding: 23px 0px 88px;
+    }
+
+    &__heading {
+        font-size: 64px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        line-height: 88px;
+        margin-bottom: 24px !important;
+    }
+
+    &__info {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 66px !important;
+    }
+
+    &__search {
+        width: 610px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 56px;
+
+        &>input {
+            border-radius: 8px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            width: 100%;
+            padding: 24px 0px 29px 56px;
+        }
+
+        &>button {
+            right: 16px;
+            position: absolute;
+            @include btn($pt: 12px, $pl: 32px);
+        }
+
+        &>i {
+            position: absolute;
+            left: 16px;
+            color: $blue;
+            font-size: 22px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        padding: 0;
+
+        li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        h5 {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        i {
+            font-size: 26px;
+        }
+    }
+
+    &__right {
+        max-width: 529px;
+        width: 100%;
+        border-radius: 8px;
+        background: #E6E6E6;
+        height: 100%;
+        position: relative;
+    }
+
+    &__review {
+        position: absolute;
+        padding: 12px 16px 16px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        background-color: white;
+        right: 30px;
+        bottom: 48px;
+
+        &__heading {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $blue;
+            margin-bottom: 1px;
+        }
+
+        &__info {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $blue;
+            margin-bottom: 4px;
+        }
+
+        &>ul {
+            display: flex;
+            padding: 0;
+            color: #FAA307;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            // margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero {
+
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 54px 54px 0px;
+        }
+
+        &__heading {
+            font-size: 58px;
+        }
+
+        &__search {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero {
+
+        &__heading {
+            font-size: 54px;
+        }
+
+        &__info {
+            margin-bottom: 10% !important;
+        }
+
+        &__review {
+            padding: 10px 12px 12px 12px;
+
+            &>ul {
+                gap: 8px;
+                font-size: 16px;
+            }
+        }
+
+        &__search {
+            padding: 18px 0px 18px 0px;
+        }
+
+        &__left {
+            padding: 18px 0px 68px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        &__left {
+            padding: 18px 0px 68px;
+        }
+
+        &__info {
+            margin-bottom: 8% !important;
+        }
+
+        &__search {
+            margin-bottom: 46px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero {
+        &__heading {
+            font-size: 49px;
+            margin-bottom: 20px !important;
+        }
+
+        &__info {
+            margin-bottom: 6% !important;
+            font-size: 14px;
+        }
+
+        &__search {
+            margin-bottom: 36px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+
+        &__container {
+            grid-template-columns: 1fr;
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}

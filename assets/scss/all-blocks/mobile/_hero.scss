@@ -1,0 +1,49 @@
+@media (max-width: 490px) {
+    .hero {
+
+        &__container {
+            padding: 40px 20px;
+        }
+
+        &__list {
+            gap: 24px;
+
+            &>li {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .hero {
+
+        &__heading {
+            line-height: 80px;
+            font-size: 36px;
+        }
+
+        &__list {
+            &>li {
+                flex-direction: column;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+
+        &__heading {
+            line-height: 60px;
+        }
+
+        &__search {
+            &>input {
+                padding: 18px 0px !important;
+            }
+        }
+
+    }
+}

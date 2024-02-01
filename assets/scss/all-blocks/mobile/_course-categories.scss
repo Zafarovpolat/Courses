@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+    .course-categories {
+        .categories {
+            &__see {
+                @include btn($pl: 95px);
+            }
+
+            &__container {
+                &>div {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

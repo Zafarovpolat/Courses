@@ -1,0 +1,42 @@
+@media (max-width: 1010px) {
+    .expert {
+        &__card {
+            &__price {
+                &>h3 {
+                    font-size: 26px;
+                }
+
+                &>del {
+                    font-size: 18px;
+                }
+            }
+
+            &__up {
+                &>h4 {
+                    font-size: 22px;
+                    max-width: 150px;
+                }
+
+                &>div {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__wrapper {
+            &__features {
+                &>ul {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .expert {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
+}

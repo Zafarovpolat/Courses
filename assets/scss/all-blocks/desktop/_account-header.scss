@@ -1,0 +1,88 @@
+.account-header {
+    margin-bottom: 48px !important;
+
+    .header {
+
+        &__container {
+            padding: 0px 0px 300px 0px !important;
+        }
+
+        &__account {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+
+            &>img {
+                max-width: 48px;
+                max-height: 48px;
+            }
+
+            &>h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.account-header {
+    .header {
+        &__nav {
+            &__menu {
+                background-color: $blue !important;
+
+                &--btn {
+                    color: white;
+                }
+
+                & .btn-close {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .account-header {
+        .header {
+            &__nav {
+                &__search {
+                    width: 363px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .account-header {
+        .header {
+            &__nav {
+                &__search {
+                    width: 323px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .account-header {
+        .header {
+            &__nav {
+                &__search {
+                    width: 283px;
+                }
+            }
+        }
+    }
+}

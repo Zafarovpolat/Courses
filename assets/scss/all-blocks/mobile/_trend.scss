@@ -1,0 +1,18 @@
+@media (max-width: 640px) {
+    .trend {
+
+        &__category {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .trend {
+
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}

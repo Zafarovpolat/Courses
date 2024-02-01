@@ -1,0 +1,155 @@
+.header {
+    &>.my-container {
+        padding: 36px 0;
+        max-width: 1240px;
+        width: 100%;
+
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+
+        &__logo {
+            img {
+                object-fit: contain;
+                max-width: 161px;
+                min-width: 141px;
+            }
+        }
+
+        &__search {
+            width: 443px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &>input {
+                width: 100%;
+                padding: 12px 15px;
+                border-radius: 8px;
+                border: 1px solid #CCC;
+            }
+
+            &>i {
+                position: absolute;
+                right: 16px;
+                font-size: 22px;
+                color: #CCC;
+            }
+
+            input[type="search"]::-webkit-search-decoration,
+            input[type="search"]::-webkit-search-cancel-button,
+            input[type="search"]::-webkit-search-results-button,
+            input[type="search"]::-webkit-search-results-decoration {
+                -webkit-appearance: none;
+            }
+        }
+
+        &__category {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: "Montserrat";
+            font-weight: 700;
+            line-height: 32%;
+            color: $blue;
+
+            &>i {
+                font-size: 10px;
+                padding: 0px 6px;
+            }
+        }
+
+        .dropdown-item {
+            color: $blue;
+            font-family: "Montserrat";
+            padding: 10px !important;
+        }
+
+        &__btns {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: "Montserrat";
+            font-weight: 700;
+            line-height: 32%;
+            color: $blue;
+        }
+
+        &__login {
+            @include btn($color: $blue, $pt: 8px, $pl: 32px);
+            text-decoration: none;
+        }
+
+        &__sign {
+            @include btn($pt: 8px, $pl: 32px);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__wrapper:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+
+        &>.my-container {
+            width: 90%;
+        }
+
+        &__nav {
+            grid-template-columns: repeat(2, auto);
+            gap: 40px;
+
+            &__btns {
+                width: 100%;
+                gap: 20px;
+            }
+
+            &__search {
+                width: 383px;
+            }
+        }
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .header {
+        &__nav {
+            &__search {
+                width: 333px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__nav {
+            &__search {
+                display: none;
+            }
+        }
+    }
+}

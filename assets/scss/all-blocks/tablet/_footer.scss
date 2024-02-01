@@ -1,0 +1,19 @@
+@media (max-width: 900px) {
+    .footer {
+
+        &__up {
+            gap: 80px;
+            grid-template-columns: 1fr;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+
+            &>div {
+                gap: 20px;
+            }
+        }
+    }
+}

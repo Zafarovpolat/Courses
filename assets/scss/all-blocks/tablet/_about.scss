@@ -1,0 +1,229 @@
+@media (max-width: 1000px) {
+    .about {
+
+        &__mentor {
+
+            &>div {
+                grid-template-columns: repeat(2, auto);
+
+                &>div {
+
+                    &>h3 {
+                        font-size: 26px;
+                    }
+
+                    &>h4 {
+                        font-size: 14px;
+                    }
+
+                    &>div {
+                        &>span:nth-child(2) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+
+            &>ul {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                &>li {
+                    &>div {
+                        &>div {
+                            &>div {
+                                &>h3 {
+                                    font-size: 20px;
+                                }
+
+                                &>ul {
+                                    font-size: 18px;
+                                    gap: 8px;
+                                }
+
+                                &>span {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        &>ul {
+                            gap: 28px;
+                            font-size: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+
+        &__mentor {
+
+            &>div {
+                grid-template-columns: 2fr 3fr;
+
+            }
+        }
+
+        &__feedback {
+            &>div {
+                grid-template-columns: auto 1fr;
+
+                &>ul {
+
+                    &>li {
+
+                        &:nth-child(1) {
+                            &>.range {
+                                width: 303px;
+
+                                &>div {
+                                    width: 77%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &>.range {
+                                width: 251px;
+
+                                &>div {
+                                    width: 71%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &>.range {
+                                width: 203px;
+
+
+                                &>div {
+                                    width: 70%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            &>.range {
+                                width: 174px;
+
+                                &>div {
+                                    width: 63%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            &>.range {
+                                width: 142px;
+
+
+                                &>div {
+                                    width: 55%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &>div {
+                    &>h3 {
+                        font-size: 40px;
+                        line-height: 54px;
+                    }
+
+                    &>ul {
+                        gap: 8px;
+                        font-size: 18px;
+                    }
+
+                    &>h5 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about {
+
+        &__mentor {
+
+            &>div {
+                &>div {
+
+                    &>p {
+                        font-size: 14px;
+                    }
+
+                    &>h3 {
+                        font-size: 22px;
+                    }
+
+                    &>div {
+
+                        &>ul {
+                            font-size: 16px;
+                            gap: 6px;
+                        }
+
+                        &>span:nth-child(2) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__feedback {
+            &>div {
+
+                &>ul {
+
+                    &>li {
+
+                        &:nth-child(1) {
+                            &>.range {
+                                width: 253px;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &>.range {
+                                width: 201px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &>.range {
+                                width: 153px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            &>.range {
+                                width: 124px;
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            &>.range {
+                                width: 92px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

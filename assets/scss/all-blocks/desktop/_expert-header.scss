@@ -1,0 +1,212 @@
+.expert-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 96px !important;
+
+    .header {
+        &__container {
+            padding: 0 0 80px 0 !important;
+        }
+
+        &__nav {
+            padding: 36px 0 !important;
+            margin-bottom: 14px !important;
+
+            &__search {
+                input {
+                    background-color: transparent;
+                    caret-color: #E6E6E6;
+                    color: #E6E6E6;
+                }
+            }
+
+            &__category {
+                color: white;
+            }
+
+            &__link {
+                color: white;
+            }
+
+            &__login {
+                border-color: white;
+                background-color: transparent;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        &__content {
+            max-width: 712px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__navigate {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-family: 'Montserrat', sans-serif;
+            color: #E6E6E6;
+            margin-bottom: 64px;
+
+            &>a {
+                font-size: 16px;
+                line-height: 32px;
+                text-decoration: none;
+                color: #E6E6E6;
+            }
+
+            &>h5 {
+                font-size: 16px;
+                line-height: 32px;
+            }
+
+            &>i {
+                font-size: 12px;
+            }
+        }
+
+        &__heading {
+            padding-left: 11px !important;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 63.984px;
+            margin-bottom: 25px !important;
+        }
+
+        &__rating {
+            padding-left: 11px !important;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px !important;
+
+            &>ul {
+                display: flex;
+                gap: 10px;
+                color: #FAA307;
+                font-size: 20px;
+                margin-right: 18px !important;
+            }
+
+            &>span {
+                font-family: 'Rubik', sans-serif;
+            }
+
+            &>span:nth-child(2) {
+                color: white;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 32px;
+                margin-right: 17px !important;
+            }
+
+            &>span:nth-child(3) {
+                color: #E6E6E6;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-right: 8px !important;
+            }
+
+            &>span:nth-child(4) {
+                color: #E6E6E6;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        &__author {
+            padding-left: 11px !important;
+            display: grid;
+            grid-template-columns: 50px auto;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px !important;
+
+            &>h4 {
+                color: white;
+                font-family: 'Rubik', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 32px;
+            }
+        }
+
+        &__btns {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        &__wishlist {
+            @include btn($pt: 9px, $pl: 32px);
+        }
+
+        &__share {
+            @include btn($pt: 9px, $pl: 32px, $color: white, $fcolor: $pink);
+        }
+    }
+}
+
+::placeholder {
+    color: #E6E6E6;
+}
+
+.expert-header {
+    .header {
+        &__nav {
+            &__menu {
+                background-color: $blue !important;
+
+                &--btn {
+                    color: white;
+                }
+
+                & .btn-close {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .expert-header {
+        .header {
+            &__navigate {
+                gap: 10px;
+            }
+
+            &__content {
+                max-width: 662px;
+            }
+
+            &__heading {
+                font-size: 44px;
+            }
+
+            &__rating {
+                margin-bottom: 34px !important;
+
+                &>ul {
+                    font-size: 18px;
+                }
+
+                &>span:nth-child(2) {
+                    font-size: 22px;
+                }
+            }
+
+            &__author {
+                &>h4 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

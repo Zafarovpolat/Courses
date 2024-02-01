@@ -1,0 +1,88 @@
+.account-trend {
+    .trend {
+
+        &__container {
+            margin-bottom: 110px !important;
+        }
+
+        &__account {
+            align-self: start;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 60px !important;
+
+            &>img {
+                max-width: 150px;
+                max-height: 150px;
+            }
+
+            &>div {
+                &>h3 {
+                    margin-bottom: 10px !important;
+                    color: $blue;
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    text-transform: capitalize;
+                }
+
+                &>h4 {
+                    color: #808080;
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        &__category {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 200px;
+
+            &>li:nth-child(1) {
+                &>button {
+                    color: $blue;
+                    @include btn($fcolor: $blue);
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 5px solid $pink;
+                    border-radius: 0px;
+                    font-size: 32px;
+                }
+            }
+
+            &__btn {
+                font-family: 'Rubik', sans-serif;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 48px;
+                background-color: transparent;
+                padding-bottom: 15px !important;
+
+                &:hover {
+                    color: $pink;
+                }
+            }
+        }
+
+        &__cards {
+            gap: 32px 16px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .account-trend {
+        .trend {
+            &__category {
+                gap: 100px;
+            }
+        }
+    }
+}

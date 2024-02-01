@@ -1,0 +1,119 @@
+.footer {
+    margin-bottom: 40px;
+
+    &__container {
+        background-color: #021934;
+        width: 100%;
+        padding: 80px 103px 40px 68px;
+        border-radius: 8px;
+    }
+
+    &__up {
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: 500px 560px;
+        gap: 120px;
+        color: white;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    &__logo {
+
+        img {
+            max-width: 161px;
+        }
+    }
+
+    &__info {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 27px;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        &>li:nth-child(1) {
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 24px !important;
+        }
+
+        &>li {
+            margin-bottom: 8px !important;
+
+            &>a {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                line-height: 32px;
+                text-decoration: none;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+
+        &>div {
+            display: flex;
+            gap: 40px;
+
+            &>a {
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 27px;
+                text-decoration: none;
+            }
+        }
+
+        &>p {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 27px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer {
+        &__up {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        margin-bottom: 0;
+
+        &__up {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer {
+
+        &__container {
+            padding: 80px 70px 40px 70px !important;
+        }
+
+        &__up {
+            grid-template-columns: 1fr;
+        }
+    }
+}

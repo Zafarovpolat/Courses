@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/media/icon//favicon-16x16.png">
+    <link rel="manifest" href="assets/media/icon//site.webmanifest">
+    <!-- Favicon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
+    <!-- CSS -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- Bootstrap -->
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="my-container header__container">
+            <nav class="header__nav">
+                <div class="header__wrapper">
+                    <a href="./index.html" class="header__nav__logo">
+                        <img src="./assets/media/header-logo.svg" alt="">
+                    </a>
+                    <form action="" class="header__nav__search">
+                        <input type="search" placeholder="Search bar">
+                        <i class="fa-solid fa-search"></i>
+                    </form>
+                </div>
+
+                <div class="header__wrapper">
+                    <ul class="header__nav__btns">
+                        <li class="dropdown">
+                            <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                <li><a class="dropdown-item" href="#">Language</a></li>
+                                <li><a class="dropdown-item" href="#">Math</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./expert.html" class="header__nav__link">
+                                Become an Mentor
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./account.html" class="header__nav__login">Login</a>
+                        </li>
+
+                        <li>
+                            <button class="header__nav__sign" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">Sing
+                                Up</button>
+
+                            <!-- Modal -->
+                            <form class="modal fade" id="exampleModal2" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Write your login</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlFName" class="form-label">First
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlFName"
+                                                    placeholder="John">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlLName" class="form-label">Last
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlLName"
+                                                    placeholder="Doe">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewEmail"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlNewEmail" placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewPassword"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleFormControlNewPassword" placeholder="Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Agree terms and conditions
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="submit" class="header__nav__sign">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__wrapper">
+
+                    <button class="header__nav__menu--btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-start w-100 header__nav__menu" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                        <form action="" class="header__nav__search">
+                            <input type="search" placeholder="Search bar">
+                            <i class="fa-solid fa-search"></i>
+                        </form>
+
+                        <ul class="header__nav__btns">
+                            <li class="dropdown-center">
+                                <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Language</a></li>
+                                    <li><a class="dropdown-item" href="#">Math</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./expert.html" class="header__nav__link">
+                                    Become an Mentor
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__login">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__sign text-decoration-none">Sing Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="trend course-trend">
+            <div class="my-container trend__container">
+                <div class="trend__navigate">
+                    <a href="./index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <h5>Programming Courses</h5>
+                </div>
+                <h2 class="trend__heading">Programming courses</h2>
+                <p class="trend__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                    amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
+                <h3 class="trend__subheading">Most Popular Development Courses</h3>
+                <!-- sss -->
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <ul class="trend__cards">
+                                <button class="trend__switch">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Interpersonal skills - work better with others!</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Interpersonal skills - work better with others!</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Interpersonal skills - work better with others!</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Interpersonal skills - work better with others!</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <button class="trend__switch">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </ul>
+                        </div>
+
+                        <div class="carousel-item">
+                            <ul class="trend__cards">
+                                <button class="trend__switch">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="trend__cards__card">
+                                    <div class="trend__cards__card__img">
+                                        <img src="./assets/media/trend.png" alt="">
+                                        <a href="">UI/UX Design</a>
+                                    </div>
+                                    <div class="trend__cards__card__text">
+                                        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                                        <a href="#">Tanah Air Team</a>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <span>(2078)</span>
+                                        </ul>
+                                        <div>
+                                            <del>$640</del>
+                                            <h4>$384</h4>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <button class="trend__switch">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="commit__switch" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="commit__switch" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- sss -->
+            </div>
+        </section>
+
+        <section class="categories course-categories">
+            <div class="my-container categories__container">
+                <div>
+                    <h2 class="categories__heading">Programming Topics</h2>
+                    <button class="categories__see">See all</button>
+                </div>
+                <ul class="categories__cards">
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Python</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Javascript</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">CSS</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">C#</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Python</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Javascript</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">CSS</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">C#</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="trend course-trend course-cards">
+            <div class="my-container trend__container">
+
+                <div class="trend__up">
+                    <h2 class="trend__heading">All Courses</h2>
+                    <div class="trend__btns">
+                        <button class="trend__filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2Example"
+                            aria-controls="offcanvasExample">
+                            Filter
+                            <i class="fa-solid fa-qrcode"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2Example"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filter:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="filter d-flex gap-2 flex-md-column">
+                                    <li class="d-flex align-items-center fs-5 gap-2 "><label
+                                            for="">Popular</label><input type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Most
+                                            Rated</label><input type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Old</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Free</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Easiest</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Most
+                                            Expensive</label><input type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Popular</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Most
+                                            Rated</label><input type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Old</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Free</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Easiest</label><input
+                                            type="checkbox"></li>
+                                    <li class="d-flex align-items-center fs-5 gap-2"><label for="">Most
+                                            Expensive</label><input type="checkbox"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="trend__popular">
+                            Most Popular
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="trend__wrapper">
+
+                    <div class="trend__side">
+                        <div class="trend__side__rating">
+                            <button class="trend__side__rating__btn">
+                                Ratings
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__rating__list">
+                                <li><input type="checkbox" name="" id="fiveStars">
+                                    <label for="fiveStars">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <h5>5</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="fourStars">
+                                    <label for="fourStars">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <h5>4+</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="threeStars">
+                                    <label for="threeStars">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <h5>3+</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="twoStars">
+                                    <label for="twoStars">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <h5>2+</h5>
+                                        <span>(2049)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="oneStar">
+                                    <label for="oneStar">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <h5>1+</h5>
+                                        <span>(2049)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__duration__btn">
+                                Durations
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list">
+                                <li><input type="checkbox" name="" id="hour1-3">
+                                    <label for="hour1-3">
+                                        <h5>1-3 Hours</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="hour3-6">
+                                    <label for="hour3-6">
+                                        <h5>3-6 Hours</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="hour6-12">
+                                    <label for="hour6-12">
+                                        <h5>6-12 Hours</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="hour13+">
+                                    <label for="hour13+">
+                                        <h5>13+ Hours</h5>
+                                        <span>(2049)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__categories__btn">
+                                Categories
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list">
+                                <li><input type="checkbox" name="" id="golang">
+                                    <label for="golang">
+                                        <h5>Golang</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="java">
+                                    <label for="java">
+                                        <h5>Java</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="flutter">
+                                    <label for="flutter">
+                                        <h5>Flutter</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="css">
+                                    <label for="css">
+                                        <h5>CSS</h5>
+                                        <span>(2049)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__level__btn">
+                                Level
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list">
+                                <li><input type="checkbox" name="" id="beginner">
+                                    <label for="beginner">
+                                        <h5>Beginner</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="intermediate">
+                                    <label for="intermediate">
+                                        <h5>Intermediate</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="expert">
+                                    <label for="expert">
+                                        <h5>Expert</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__language__btn">
+                                Language
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list">
+                                <li><input type="checkbox" name="" id="english">
+                                    <label for="english">
+                                        <h5>English</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="espanol">
+                                    <label for="espanol">
+                                        <h5>Espanol</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="melayu">
+                                    <label for="melayu">
+                                        <h5>Melayu</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="bahasa">
+                                    <label for="bahasa">
+                                        <h5>Bahasa Indonesia</h5>
+                                        <span>(2049)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <button class="more">
+                                        Show more
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__price__btn">
+                                Price
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list hide">
+                                <li><input type="checkbox" name="" id="tenplus">
+                                    <label for="tenplus">
+                                        <h5>10$+</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="fiftyplus">
+                                    <label for="fiftyplus">
+                                        <h5>50$+</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="hundredplus">
+                                    <label for="hundredplus">
+                                        <h5>100$+</h5>
+                                        <span>(224)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="trend__side__duration">
+                            <button class="trend__side__featerus__btn">
+                                Features
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+
+                            <ul class="trend__side__duration__list">
+                                <li><input type="checkbox" name="" id="engineering">
+                                    <label for="engineering">
+                                        <h5>Engineering</h5>
+                                        <span>(1242)</span>
+                                    </label>
+                                </li>
+                                <li><input type="checkbox" name="" id="programming">
+                                    <label for="programming">
+                                        <h5>Programming</h5>
+                                        <span>(2145)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <ul class="trend__cards">
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="trend__cards__card">
+                            <div class="trend__cards__card__img">
+                                <img src="./assets/media/trend.png" alt="">
+                                <a href="">UI/UX Design</a>
+                            </div>
+                            <div class="trend__cards__card__text">
+                                <h5>Interpersonal skills - work better with others!</h5>
+                                <a href="#">Tanah Air Team</a>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <span>(2078)</span>
+                                </ul>
+                                <div>
+                                    <del>$640</del>
+                                    <h4>$384</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <ul class="trend__pagination">
+                            <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="my-container footer__container">
+            <div class="footer__up">
+                <div class="footer__left">
+                    <a href="./index.html" class="footer__logo"><img src="./assets/media/footer-logo.svg" alt=""></a>
+                    <p class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique
+                        placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus.
+                    </p>
+                </div>
+
+                <div class="footer__right">
+                    <ul class="footer__list">
+                        <li>
+                            <h4>About</h4>
+                        </li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Mentor</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Support</h4>
+                        </li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Condition</a>
+                </div>
+                <p>@2020 TanahAir Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+
+</body>
+
+</html>

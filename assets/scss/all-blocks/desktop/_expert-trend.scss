@@ -1,0 +1,17 @@
+.expert-trend {
+    .trend {
+
+        &__container {
+            text-align: left;
+            align-items: start;
+            margin-bottom: 108px !important;
+        }
+
+        &__heading {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            margin-bottom: 40px !important;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.categories {
+
+    &__container {
+        max-width: 1232px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 200px;
+    }
+
+    &__heading {
+        @include heading();
+        margin-bottom: 56px !important;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 296px);
+        gap: 16px;
+        margin-bottom: 211px !important;
+
+        &__card>a {
+            text-decoration: none;
+            padding-top: 13px;
+            max-height: 350px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 278px 0px 40px 0px !important;
+            text-transform: capitalize;
+
+            &:hover {
+                translate: 0px -10px;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 131px 180px 157px 109px;
+        justify-content: space-around;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>i {
+                font-size: 54px;
+                color: $pink;
+                margin-bottom: 16px !important;
+            }
+
+            &>h4 {
+                margin-bottom: 8px !important;
+                color: $blue;
+                font-family: 'Rubik', sans-serif;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                text-transform: capitalize;
+            }
+
+            &>p {
+                color: $blue;
+                font-family: 'Rubik', sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .categories {
+        &__container {
+            width: 90%;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .categories {
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 181px !important;
+        }
+
+        &__info {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@media (max-width: 600px) {
+    .blog {
+
+        &__cards {
+            align-items: center;
+
+            &__card {
+                max-width: 400px;
+
+                &>img {
+                    max-height: 150px;
+                }
+
+                &>div {
+
+                    &>h3 {
+                        @include heading($fs: 28px, $lh: 30px)
+                    }
+
+                    &>p {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+
+                    &>div {
+                        &>span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+
+        &__cards {
+            align-items: center;
+
+            &__card {
+                max-width: 400px;
+
+                &>div {
+                    &>p {
+                        text-align: justify;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

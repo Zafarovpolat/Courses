@@ -1,0 +1,16 @@
+@media (max-width: 980px) {
+    .categories {
+        &__info {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .categories {
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

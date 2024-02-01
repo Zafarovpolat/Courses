@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/media/icon//favicon-16x16.png">
+    <link rel="manifest" href="assets/media/icon//site.webmanifest">
+    <!-- Favicon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
+    <!-- CSS -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- Bootstrap -->
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="my-container header__container">
+            <nav class="header__nav">
+                <div class="header__wrapper">
+                    <a href="./index.html" class="header__nav__logo">
+                        <img src="./assets/media/header-logo.svg" alt="">
+                    </a>
+                    <form action="" class="header__nav__search">
+                        <input type="search" placeholder="Search bar">
+                        <i class="fa-solid fa-search"></i>
+                    </form>
+                </div>
+
+                <div class="header__wrapper">
+                    <ul class="header__nav__btns">
+                        <li class="dropdown">
+                            <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                <li><a class="dropdown-item" href="#">Language</a></li>
+                                <li><a class="dropdown-item" href="#">Math</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./expert.html" class="header__nav__link">
+                                Become an Mentor
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./account.html" class="header__nav__login">Login</a>
+                        </li>
+
+                        <li>
+                            <button class="header__nav__sign" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">Sing
+                                Up</button>
+
+                            <!-- Modal -->
+                            <form class="modal fade" id="exampleModal2" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Write your login</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlFName" class="form-label">First
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlFName"
+                                                    placeholder="John">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlLName" class="form-label">Last
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlLName"
+                                                    placeholder="Doe">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewEmail"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlNewEmail" placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewPassword"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleFormControlNewPassword" placeholder="Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Agree terms and conditions
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a href="./account.html" class="header__nav__sign">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__wrapper">
+
+                    <button class="header__nav__menu--btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-start w-100 header__nav__menu" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                        <form action="" class="header__nav__search">
+                            <input type="search" placeholder="Search bar">
+                            <i class="fa-solid fa-search"></i>
+                        </form>
+
+                        <ul class="header__nav__btns">
+                            <li class="dropdown-center">
+                                <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Language</a></li>
+                                    <li><a class="dropdown-item" href="#">Math</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./expert.html" class="header__nav__link">
+                                    Become an Mentor
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__login">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__sign text-decoration-none">Sing Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="my-container hero__container">
+                <div class="hero__left">
+                    <h2 class="hero__heading">Find the Best Courses and Amazing Mentor</h2>
+                    <p class="hero__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
+                    <form action="" class="hero__search">
+                        <input type="search" placeholder="Type in the course you want to learn">
+                        <i class="fa-solid fa-search"></i>
+                        <button>Search</button>
+                    </form>
+                    <ul class="hero__list">
+                        <li>
+                            <i class="fa-regular fa-bell"></i>
+                            <h5>Life Time Acces</h5>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-user"></i>
+                            <h5>Expert Mentor</h5>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-photo-film"></i>
+                            <h5>100K+ Courses</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__right">
+                    <div class="hero__review">
+                        <h4 class="hero__review__heading">500+</h4>
+                        <h5 class="hero__review__info">Total Review</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trend">
+            <div class="my-container trend__container">
+                <h2 class="trend__heading">Trending Courses</h2>
+                <ul class="trend__category">
+                    <li>
+                        <label for="all"></label>
+                        <input type="radio" name="type" id="all" checked>
+                        <button class="trend__category__btn">All</button>
+                    </li>
+                    <li>
+                        <label for="business"></label>
+                        <input type="radio" name="type" id="business">
+                        <button class="trend__category__btn">Business</button>
+                    </li>
+                    <li>
+                        <label for="art"></label>
+                        <input type="radio" name="type" id="art">
+                        <button class="trend__category__btn">Art & Design</button>
+                    </li>
+                    <li>
+                        <label for="development"></label>
+                        <input type="radio" name="type" id="development">
+                        <button class="trend__category__btn">Development</button>
+                    </li>
+                    <li>
+                        <label for="marketing"></label>
+                        <input type="radio" name="type" id="marketing">
+                        <button class="trend__category__btn">Marketing</button>
+                    </li>
+                </ul>
+                <ul class="trend__cards">
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="trend__btn">More Courses</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="my-container categories__container">
+                <h2 class="categories__heading">Top Categories</h2>
+                <ul class="categories__cards">
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Art & Design</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Business</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Copy Writing</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Marketing</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Art & Design</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Business</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Copy Writing</h4>
+                        </a>
+                    </li>
+                    <li class="categories__cards__card">
+                        <a href="">
+                            <h4 class="categories__cards__text">Marketing</h4>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="categories__info">
+                    <li class="categories__info__card">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <h4>10.000+</h4>
+                        <p>Courses</p>
+                    </li>
+                    <li class="categories__info__card">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>50.000+</h4>
+                        <p>Active Students</p>
+                    </li>
+                    <li class="categories__info__card">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <h4>1000+</h4>
+                        <p>Active Mentor</p>
+                    </li>
+                    <li class="categories__info__card">
+                        <i class="fa-regular fa-flag"></i>
+                        <h4>180</h4>
+                        <p>Countries</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mentor">
+            <div class="my-container mentor__container">
+                <div class="mentor__img"><img src="./assets/media/mentor.png" alt=""></div>
+                <div class="mentor__text">
+                    <h2 class="mentor__heading">Become an Mentor</h2>
+                    <p class="mentor__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci,
+                        nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio
+                        amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+                    </p>
+                    <p class="mentor__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci,
+                        nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio
+                        amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+                    </p>
+                    <a href="./expert.html" class="mentor__start">Start Teaching</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="commit">
+            <div class="my-container commit__container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="commit__wrapper">
+                                <div class="commit__img">
+                                    <img src="./assets/media/commit-bcg.png" alt="">
+                                    <img src="./assets/media/commit.svg" alt="">
+                                </div>
+                                <div class="commit__text">
+                                    <p>After studying here I gained new knowledge and insights. The mentor was very
+                                        friendly
+                                        and
+                                        guided me to get the knowledge I wanted. Thank you!</p>
+                                    <a href="">KecekArif</a>
+                                    <h4>Yang punya Surabaya nanti kapan - kapan tapi</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="commit__wrapper">
+                                <div class="commit__img">
+                                    <img src="./assets/media/commit-bcg.png" alt="">
+                                    <img src="./assets/media/commit.svg" alt="">
+                                </div>
+                                <div class="commit__text">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In laudantium ipsa
+                                        alias odio, molestias voluptas repudiandae repellat quam voluptatibus.</p>
+                                    <a href="">LoremIpsum</a>
+                                    <h4>Lorem ipsum dolor sit amet - Lorem, ipsum.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="commit__wrapper">
+                                <div class="commit__img">
+                                    <img src="./assets/media/commit-bcg.png" alt="">
+                                    <img src="./assets/media/commit.svg" alt="">
+                                </div>
+                                <div class="commit__text">
+                                    <p>John Doe is multiple-use placeholder names that are used in the United States and
+                                        the United Kingdom when the true name of a person is unknown.</p>
+                                    <a href="">JohnDoe</a>
+                                    <h4>Lorem ipsum dolor sit amet - Lorem, ipsum.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="commit__switch" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="commit__switch" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="my-container brands__container">
+                <h2 class="brands__heading">Trusted by Company</h2>
+                <ul class="brands__list">
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-3.svg" alt=""></a></li>
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-1.svg" alt=""></a></li>
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-2.svg" alt=""></a></li>
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-3.svg" alt=""></a></li>
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-2.svg" alt=""></a></li>
+                    <li class="brands__list__item"><a href=""><img src="./assets/media/brands-1.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="latest">
+            <div class="my-container latest__container">
+                <h2 class="latest__heading">The Latest Blog</h2>
+                <ul class="latest__cards">
+                    <li class="latest__cards__card">
+                        <img src="./assets/media/latest.png" alt="">
+                        <div>
+                            <time>3, Mei 2021</time>
+                            <span>3 min read</span>
+                        </div>
+                        <h4>10 graphic design trends to get you inspired in 2021</h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                        <a href="">Read More</a>
+                    </li>
+                    <li class="latest__cards__card">
+                        <img src="./assets/media/latest.png" alt="">
+                        <div>
+                            <time>3, Mei 2021</time>
+                            <span>3 min read</span>
+                        </div>
+                        <h4>10 graphic design trends to get you inspired in 2021</h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                        <a href="">Read More</a>
+                    </li>
+                    <li class="latest__cards__card">
+                        <img src="./assets/media/latest.png" alt="">
+                        <div>
+                            <time>3, Mei 2021</time>
+                            <span>3 min read</span>
+                        </div>
+                        <h4>10 graphic design trends to get you inspired in 2021</h4>
+                        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                        <a href="">Read More</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="my-container footer__container">
+            <div class="footer__up">
+                <div class="footer__left">
+                    <a href="" class="footer__logo"><img src="./assets/media/footer-logo.svg" alt=""></a>
+                    <p class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique
+                        placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus.
+                    </p>
+                </div>
+
+                <div class="footer__right">
+                    <ul class="footer__list">
+                        <li>
+                            <h4>About</h4>
+                        </li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Mentor</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Support</h4>
+                        </li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Condition</a>
+                </div>
+                <p>@2020 TanahAir Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+
+</body>
+
+</html>

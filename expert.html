@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/media/icon//favicon-16x16.png">
+    <link rel="manifest" href="assets/media/icon//site.webmanifest">
+    <!-- Favicon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
+    <!-- CSS -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- Bootstrap -->
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <header class="header expert-header">
+        <div class="my-container header__container">
+            <nav class="header__nav">
+                <div class="header__wrapper">
+                    <a href="./index.html" class="header__nav__logo">
+                        <img src="./assets/media/footer-logo.svg" alt="">
+                    </a>
+                    <form action="" class="header__nav__search">
+                        <input type="search" placeholder="Search bar">
+                        <i class="fa-solid fa-search"></i>
+                    </form>
+                </div>
+
+                <div class="header__wrapper">
+                    <ul class="header__nav__btns">
+                        <li class="dropdown">
+                            <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                <li><a class="dropdown-item" href="#">Language</a></li>
+                                <li><a class="dropdown-item" href="#">Math</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="" class="header__nav__link">
+                                Become an Mentor
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./account.html" class="header__nav__login">Login</a>
+                        </li>
+                        </li>
+
+                        <li>
+                            <button class="header__nav__sign" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">Sing
+                                Up</button>
+
+                            <!-- Modal -->
+                            <form class="modal fade" id="exampleModal2" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Write your login</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlFName" class="form-label">First
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlFName"
+                                                    placeholder="John">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlLName" class="form-label">Last
+                                                    Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlLName"
+                                                    placeholder="Doe">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewEmail"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlNewEmail" placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="col-auto">
+                                                    <label for="exampleFormControlNewPassword"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleFormControlNewPassword" placeholder="Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Agree terms and conditions
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="submit" class="header__nav__sign">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__wrapper">
+
+                    <button class="header__nav__menu--btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-start w-100 header__nav__menu" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                        <form action="" class="header__nav__search">
+                            <input type="search" placeholder="Search bar">
+                            <i class="fa-solid fa-search"></i>
+                        </form>
+
+                        <ul class="header__nav__btns">
+                            <li class="dropdown-center">
+                                <a href="#" class="header__nav__category" data-bs-toggle="dropdown">Category
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="./course.html">Programming</a></li>
+                                    <li><a class="dropdown-item" href="#">Language</a></li>
+                                    <li><a class="dropdown-item" href="#">Math</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./expert.html" class="header__nav__link">
+                                    Become an Mentor
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__login">Login</a>
+                            </li>
+
+                            <li>
+                                <a href="./account.html" class="header__nav__sign text-decoration-none">Sing Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__content">
+                <div class="header__navigate">
+                    <a href="./index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="./course.html">Programming Courses</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <h5>How to become an Expert Web Developer</h5>
+                </div>
+                <h2 class="header__heading">How to become an Expert Web Developer</h2>
+                <div class="header__rating">
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <span>4,7/5</span>
+                    <span>(1023 Reviews)</span>
+                    <span>20327 Student</span>
+                </div>
+                <div class="header__author">
+                    <img src="./assets/media/header__author.svg" alt="">
+                    <h4>Pak Arif Satria Kecek ulalala</h4>
+                </div>
+                <div class="header__btns">
+                    <button class="header__wishlist">
+                        Add To Wishlist
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="header__share">
+                        Share
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="expert">
+            <div class="my-container expert__container">
+                <div class="expert__wrapper">
+                    <div class="expert__wrapper__learn">
+                        <h2>What you’ll learn from this course</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in
+                            orci,
+                            nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa,
+                            odio
+                            amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna
+                            mauris.
+                            Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in
+                            orci,
+                            nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa,
+                            odio
+                            amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna
+                            mauris.
+                            Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in
+                            orci,
+                            nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa,
+                            odio
+                            amet. Auctor sit mattis non id proin elit placerat</p>
+                    </div>
+
+                    <div class="expert__wrapper__features">
+                        <h2>Objectives Features</h2>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Build fully websites and web apps for your startup or business.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Craft a portfolio of websites to apply for junior developer jobs.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Build fully websites and web apps for your startup or business.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Craft a portfolio of websites to apply for junior developer jobs.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Build fully websites and web apps for your startup or business.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Craft a portfolio of websites to apply for junior developer jobs.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Build fully websites and web apps for your startup or business.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Craft a portfolio of websites to apply for junior developer jobs.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Build fully websites and web apps for your startup or business.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Craft a portfolio of websites to apply for junior developer jobs.</h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="expert__wrapper__requirement">
+                        <h2>Requirement</h2>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>No programming experience needed - I'll teach you everything you need to know</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>A Mac or PC computer with access to the internet</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>No previous coding experience is needed</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>All tools and software used in this course will be free</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4>Any operating system: Mac, PC, Linux</h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="expert__wrapper__module">
+                        <div>
+                            <h2>Module Courses</h2>
+                            <h3>24 Modules - 124 Lectures - 24 h 12m</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <label for="intro">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro" checked>
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro2">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro2">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro3">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro3">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro4">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro4">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro5">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro5">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro6">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro6">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="intro7">
+                                    Introducing to Web Development
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </label>
+                                <input type="checkbox" name="" id="intro7">
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>Welcome!</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Syllabus download</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Courses resources</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Join online group classes</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>How do website actually work?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-circle-play"></i>
+                                                <h4>What is Internet?</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <i class="fa-solid fa-list"></i>
+                                                <h4>Download 10 rules code</h4>
+                                            </div>
+                                            <span>01:24</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <button>17 More Modules</button>
+                    </div>
+                </div>
+
+                <div class="expert__card">
+                    <iframe class="expert__card__video" width="100%" height="313px"
+                        src="https://www.youtube.com/embed/ok-plXXHlWw?si=FIU7m6UD3HSQTZ_4" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div>
+                        <div class="expert__card__price">
+                            <h3>$53</h3>
+                            <del>$124</del>
+                        </div>
+                        <div class="expert__card__up">
+                            <h4>64 Document courses</h4>
+                            <div>50% OFF</div>
+                        </div>
+                        <ul class="expert__card__list">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5>24 Modules</h5>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5>12 exercises</h5>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5>Full time access</h5>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5>Certificate</h5>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <h5>20 resources </h5>
+                            </li>
+                        </ul>
+                        <button class="expert__card__add">Add To Cart</button>
+                        <button class="expert__card__buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="my-container about__container">
+                <div class="about__mentor">
+                    <h2>Mentor</h2>
+                    <div>
+                        <img src="./assets/media/expert-img.png" alt="">
+                        <div>
+                            <h3>Arif kecek</h3>
+                            <h4>Senior developer expert instructor</h4>
+                            <div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <span>4,7/5</span>
+                                <span>(1023 Reviews)</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc
+                                amet libero. Nam scelerisque vestibulum bibendum a turpis.</p>
+                            <ul>
+                                <li>
+                                    <img src="./assets/media/lightblue-circle.svg" alt="">
+                                    <h6>12 Courses</h6>
+                                </li>
+                                <li>
+                                    <img src="./assets/media/lightblue-circle.svg" alt="">
+                                    <h6>2583 Student</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__feedback">
+                    <h2>Feedback</h2>
+                    <div>
+                        <div>
+                            <h3>5.0</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <h5>Course Rating</h5>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="range">
+                                    <div></div>
+                                </div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <span>500 Reviews</span>
+                            </li>
+                            <li>
+                                <div class="range">
+                                    <div></div>
+                                </div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <span>214 Reviews</span>
+                            </li>
+                            <li>
+                                <div class="range">
+                                    <div></div>
+                                </div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <span>151 Reviews</span>
+                            </li>
+                            <li>
+                                <div class="range">
+                                    <div></div>
+                                </div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <span>51 Reviews</span>
+                            </li>
+                            <li>
+                                <div class="range">
+                                    <div></div>
+                                </div>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <span>21 Reviews</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about__reviews">
+                    <div>
+                        <h2>Reviews</h2>
+                        <div class="dropdown">
+                            <button data-bs-toggle="dropdown" aria-expanded="false">
+                                All Ratings
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another</a></li>
+                                <li><a class="dropdown-item" href="#">Something</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div>
+                                <div>
+                                    <img src="./assets/media/review.svg" alt="">
+                                    <div>
+                                        <h3>Mas Ehan</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <span>2 month ago</span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><button><i class="fa-regular fa-thumbs-up"></i></button></li>
+                                    <li><button><i class="fa-regular fa-thumbs-down"></i></button></li>
+                                </ul>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim
+                                posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam
+                                varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis
+                                adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus.
+                                Mauris egestas nunc morbi dignissim.</p>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <img src="./assets/media/review.svg" alt="">
+                                    <div>
+                                        <h3>Mas Ehan</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <span>2 month ago</span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><button><i class="fa-regular fa-thumbs-up"></i></button></li>
+                                    <li><button><i class="fa-regular fa-thumbs-down"></i></button></li>
+                                </ul>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim
+                                posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam
+                                varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis
+                                adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus.
+                                Mauris egestas nunc morbi dignissim.</p>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <img src="./assets/media/review.svg" alt="">
+                                    <div>
+                                        <h3>Mas Ehan</h3>
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <span>2 month ago</span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><button><i class="fa-regular fa-thumbs-up"></i></button></li>
+                                    <li><button><i class="fa-regular fa-thumbs-down"></i></button></li>
+                                </ul>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim
+                                posuere. Tempus, risus varius rhoncus ipsum, sed egestas nisi pellentesque. Sapien quam
+                                varius euismod in velit diam posuere netus nec. A consectetur nec ac sed convallis
+                                adipiscing. Aenean enim cursus a mattis ac velit, quis. Nibh id dui, justo, at tempus.
+                                Mauris egestas nunc morbi dignissim.</p>
+                        </li>
+                    </ul>
+
+                    <button>More Reviews</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="trend expert-trend">
+            <div class="my-container trend__container">
+                <h2 class="trend__heading">More Courses from Arif Kecek</h2>
+                <ul class="trend__cards">
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trend__cards__card">
+                        <div class="trend__cards__card__img">
+                            <img src="./assets/media/trend.png" alt="">
+                            <a href="">UI/UX Design</a>
+                        </div>
+                        <div class="trend__cards__card__text">
+                            <h5>Interpersonal skills - work better with others!</h5>
+                            <a href="#">Tanah Air Team</a>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span>(2078)</span>
+                            </ul>
+                            <div>
+                                <del>$640</del>
+                                <h4>$384</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="my-container footer__container">
+            <div class="footer__up">
+                <div class="footer__left">
+                    <a href="./index.html" class="footer__logo"><img src="./assets/media/footer-logo.svg" alt=""></a>
+                    <p class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique
+                        placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus.
+                    </p>
+                </div>
+
+                <div class="footer__right">
+                    <ul class="footer__list">
+                        <li>
+                            <h4>About</h4>
+                        </li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Mentor</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Support</h4>
+                        </li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Condition</a>
+                </div>
+                <p>@2020 TanahAir Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+
+</body>
+
+</html>

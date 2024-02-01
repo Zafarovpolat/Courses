@@ -1,0 +1,44 @@
+@media (max-width: 1050px) {
+    .commit {
+
+        &__text {
+
+            &>p {
+                font-size: 24px;
+            }
+
+            &>a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .commit {
+
+        &__switch {
+            display: none !important;
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__img {
+            margin: auto;
+            max-height: 400px;
+            max-width: 400px;
+        }
+
+        &__text {
+            &>p {
+                margin-bottom: 26px !important;
+            }
+        }
+    }
+}
